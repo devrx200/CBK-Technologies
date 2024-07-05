@@ -1,0 +1,154 @@
+<div class="container-fluid ">    
+    <div class="container card"> 
+        <h1 class="text-center p-0 m-0"><b>Edit Home Page Details</b></h1> 
+        <hr/>  
+        <div class="row-col-md-12 card-body">
+                <div class="card mb-3">
+                    <div class="card-header fw-bolder bg-primary text-white border">Edit Header Logo & Manu Details</div>
+                    <div class="card-body row">
+                    <div class="col-lg-6 col-md-6">
+                        <form [formGroup]="LogoImg" (ngSubmit)="onSubmit()">
+                            <label class="fw-bolder" for="headerlogo"><h3>Header Logo Image</h3></label>
+                            <hr>
+                            <div class="form-group d-flex  headerlogo">
+                                <img class="logo-shadow rounded border border-dark shadow"
+                                     [src]="LogoImg.get('selectedLogo')?.value"style="width: 240px; height: 80px;">
+                            </div>
+                            <div class="form-group d-flex mt-3 mb-3">
+                                <input class="form-control" type="file" (change)="onFileSelected($event)" formControlName="selectedLogo"accept="image/*.,.jpg,.png,.jepg" id="fileInput">                                    <!-- Update Button -->
+                                <button type="button" class=" ms-2  btn btn-success"><i class="bi bi-file-earmark-arrow-up-fill"></i></button>
+                                <!-- Delete Button -->
+                                <button type="button" class="ms-2 btn btn-danger" ><i class="bi bi-trash3"></i></button>
+                            </div>
+                          </form>
+                    </div>
+                        <!-- second logo -->
+                         <div class="col-lg-6">
+                            <form [formGroup]="LogoImg" (ngSubmit)="onSubmit()">
+                                <label class="fw-bolder" for="headerlogo"><h3>Footer Logo Image</h3></label>
+                                <hr>
+                                <div class="form-group d-flex  headerlogo">
+                                    <img class="logo-shadow rounded border border-dark shadow"
+                                         [src]="LogoImg.get('selectedLogo')?.value"style="width: 240px; height: 80px;">
+                                </div>
+                                <div class="form-group d-flex mt-3">
+                                    <input class="form-control" type="file" (change)="onFileSelected($event)" formControlName="selectedLogo" accept="image/*.,.jpg,.png,.jepg" id="fileInput">                                    <!-- Update Button -->
+                                    <button type="button" class=" ms-2  btn btn-success"><i class="bi bi-file-earmark-arrow-up-fill"></i></button>
+                                    <!-- Delete Button -->
+                                    <button type="button" class="ms-2 btn btn-danger" ><i class="bi bi-trash3"></i></button>
+                                </div>
+                              </form>
+                         </div>
+                    </div>
+                </div>
+                <div class="card  mb-3">
+                    <div class="card-header fw-bolder bg-primary border text-white">Edit Slider Images</div>
+                    <div class="card-body row">
+                        <div class="col-lg-6 col-md-6">
+                            <form [formGroup]="LogoImg" (ngSubmit)="onSubmit()">
+                                <label class="fw-bolder" for="headerlogo"><h3> No.1 Header Image 1280px X 300px </h3></label>
+                                <hr>
+                                <div class="form-group d-flex  headerlogo">
+                                    <img class="logo-shadow rounded border border-dark shadow img-fluid"
+                                         [src]="LogoImg.get('selectedLogo')?.value"style="width: 610px; height:220px;">
+                                </div>
+                                <div class="form-group d-flex mt-3 mb-3">
+                                    <input class="form-control" type="file" (change)="onFileSelected($event)" formControlName="selectedLogo"accept="image/*.,.jpg,.png,.jepg" id="fileInput">                                    <!-- Update Button -->
+                                    <button type="button" class=" ms-2  btn btn-success"><i class="bi bi-file-earmark-arrow-up-fill"></i></button>
+                                    <!-- Delete Button -->
+                                    <button type="button" class="ms-2 btn btn-danger" ><i class="bi bi-trash3"></i></button>
+                                </div>
+                              </form>
+                        </div>
+                            <!-- second logo -->
+                             <div class="col-lg-6">
+                                <form [formGroup]="LogoImg" (ngSubmit)="onSubmit()">
+                                    <label class="fw-bolder" for="headerlogo"><h3> No.2 Header Image 1280px X 300px</h3></label>
+                                    <hr>
+                                    <div class="form-group d-flex  headerlogo">
+                                        <img class="logo-shadow rounded border border-dark shadow img-fluid"
+                                             [src]="LogoImg.get('selectedLogo')?.value"style="width: 610px; height:220px;">
+                                    </div>
+                                    <div class="form-group d-flex mt-3">
+                                        <input class="form-control" type="file" (change)="onFileSelected($event)" formControlName="selectedLogo" accept="image/*.,.jpg,.png,.jepg" id="fileInput">                                    <!-- Update Button -->
+                                        <button type="button" class=" ms-2  btn btn-success"><i class="bi bi-file-earmark-arrow-up-fill"></i></button>
+                                        <!-- Delete Button -->
+                                        <button type="button" class="ms-2 btn btn-danger" ><i class="bi bi-trash3"></i></button>
+                                    </div>
+                                  </form>
+                             </div>
+                             <div class="col-lg-6 col-md-6">
+                                <form [formGroup]="LogoImg" (ngSubmit)="onSubmit()">
+                                    <label class="fw-bolder" for="headerlogo"><h3> No.3 Header Image 1280px X 300px</h3></label>
+                                    <hr>
+                                    <div class="form-group d-flex  headerlogo">
+                                        <img class="logo-shadow rounded border border-dark shadow img-fluid"
+                                             [src]="LogoImg.get('selectedLogo')?.value"style="width: 610px; height:220px;">
+                                    </div>
+                                    <div class="form-group d-flex mt-3 mb-3">
+                                        <input class="form-control" type="file" (change)="onFileSelected($event)" formControlName="selectedLogo"accept="image/*.,.jpg,.png,.jepg" id="fileInput">                                    <!-- Update Button -->
+                                        <button type="button" class=" ms-2  btn btn-success"><i class="bi bi-file-earmark-arrow-up-fill"></i></button>
+                                        <!-- Delete Button -->
+                                        <button type="button" class="ms-2 btn btn-danger" ><i class="bi bi-trash3"></i></button>
+                                    </div>
+                                  </form>
+                            </div>
+                                <!-- 4 logo -->
+                                 <div class="col-lg-6">
+                                    <form [formGroup]="LogoImg" (ngSubmit)="onSubmit()">
+                                        <label class="fw-bolder" for="headerlogo"><h3> No.4 Header Image 1280px X 300px</h3></label>
+                                        <hr>
+                                        <div class="form-group d-flex  headerlogo">
+                                            <img class="logo-shadow rounded border border-dark shadow img-fluid"
+                                                 [src]="LogoImg.get('selectedLogo')?.value" style="width: 610px; height:220px;">
+                                        </div>
+                                        <div class="form-group d-flex mt-3">
+                                            <input class="form-control" type="file" (change)="onFileSelected($event)" formControlName="selectedLogo" accept="image/*.,.jpg,.png,.jepg" id="fileInput">                                    <!-- Update Button -->
+                                            <button type="button" class=" ms-2  btn btn-success"><i class="bi bi-file-earmark-arrow-up-fill"></i></button>
+                                            <!-- Delete Button -->
+                                            <button type="button" class="ms-2 btn btn-danger" ><i class="bi bi-trash3"></i></button>
+                                        </div>
+                                      </form>
+                                 </div>
+                    </div>
+                </div>
+                <div class="card  mb-3">
+                    <div class="card-header fw-bolder">Edit Home Page Details</div>
+                    <div class="card-body row">
+                        <div class="col-lg-6">
+                            <form [formGroup]="LogoImg" (ngSubmit)="onSubmit()">
+                                <label class="fw-bolder" for="headerlogo"><h3> No.5 Header Image 1280px X 300px</h3></label>
+                                <hr>
+                                <div class="form-group ">
+                                    <div class="logo-shadow rounded border border-dark  img-fluid shadow"
+                                          style="width: 610px; height:220px;">
+                                          <!-- img adress name with delete button  -->  
+@for ( Img of Imgresponse; track $index) {                                          
+<div class="d-flex justify-content-between align-items-center m-1 p-1 img-fluid rounded border border-2 img-fluid" style="width: 590px; height:60px;">
+      <!-- Img -->
+        <img src="{{Img.img_url}}" class="logo-container   border shadow img-fluid"style="width: 90px; height:45px;">
+        <!-- Url -->
+     <div class="text-danger"> <a href="{{Img.img_url}}" class="image-url"><b>=>{{Img.id}}</b></a></div>
+<!-- Delete Button -->
+ <div class=""><button type="button" class=" btn btn-danger" (click)="deleteImg(Img.id)" ><i class="bi bi-trash3"></i></button></div>
+</div>
+}
+<!-- Replace with ngFor loop or a single item -->
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex mt-3">
+                                    <input class="form-control" type="file" (change)="onFileSelected($event)" formControlName="selectedLogo" accept="image/*.,.jpg,.png,.jepg" id="fileInput">                                    <!-- Update Button -->
+                                    <button type="button" class=" ms-2  btn btn-success"><i class="bi bi-file-earmark-arrow-up-fill"></i></button>
+                                    <!-- Delete Button -->
+                                </div>
+                              </form>
+                         </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+

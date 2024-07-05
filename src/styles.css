@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* Bootstrap 5 CSS Framework */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Bootstrap Icons CSS Framework */
+@import 'bootstrap-icons/font/bootstrap-icons.min.css';
+
+/* Font Awesome Free Icon CSS Link */
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+/* 
+.body{
+    background-color: #f0f4f9;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+} */
+

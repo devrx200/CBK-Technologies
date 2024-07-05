@@ -1,0 +1,34 @@
+
+/* That Is Foe Rigth Side News Link */
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    height:350px;
+}
+.slide{
+
+    height:350px;
+}
+@media (max-width: 768px) {
+    .carousel-item img{
+        width: 100%;
+        height: 100%;
+        height:350px;
+        object-fit:fill;
+    }
+    .slide{
+        height:350px;
+    }
+}
+
+.container{
+    background-color:#ffff;
+}
+
+.slidebutton-icon{
+        background-color: #0093E9;
+        border-radius: 5px;
+        border: solid 1px;
+        border-color: #e9f0ff;
+}
