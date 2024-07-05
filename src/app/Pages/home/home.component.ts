@@ -13,4 +13,7 @@ import { FooterComponent } from '../../Components/footer/footer.component';
 })
 export class HomeComponent {
 
+ today = new Date();
+
+
 }
